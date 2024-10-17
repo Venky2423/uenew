@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://author-p10652-e203356-cmstg.adobeaemcloud.com/bin/franklin.delivery/Venky2423/venkyuenew/main
+    url: https://a036-130-248-127-34.ngrok-free.app/bin/franklin.delivery/Venky2423/venkyuenew/main
     type: "markup"
     suffix: ".html"
