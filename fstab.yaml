@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://docs.google.com/spreadsheets/d/1n_I-fgRBkEdim0M1jSsGef4kGpLNojwaR5KF7ckr_As/edit?usp=drive_link/bin/franklin.delivery/Venky2423/uenew/main
+    url: https://docs.google.com/spreadsheets/d/1n_I-fgRBkEdim0M1jSsGef4kGpLNojwaR5KF7ckr_As/edit?usp=drive_link
     type: "markup"
     suffix: ".html"
