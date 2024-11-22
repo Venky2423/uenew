@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://publish-p133911-e1313554.adobeaemcloud.com/content/imagetestt/securebankform
+    url: https://publish-p133911-e1313554.adobeaemcloud.com
     type: "markup"
     suffix: ".html"
