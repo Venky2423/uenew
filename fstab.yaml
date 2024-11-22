@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://author-p133911-e1313554.adobeaemcloud.com/bin/franklin.delivery/Venky2423/uenew/main
+    url: https://publish-p133911-e1313554.adobeaemcloud.com/content/imagetestt/securebankform
     type: "markup"
     suffix: ".html"
