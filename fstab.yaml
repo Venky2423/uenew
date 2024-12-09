@@ -1,2 +1,5 @@
 mountpoints:
-  /: https://drive.google.com/drive/u/4/folders/1a2HylImi21gi3ld0ZfpFpr7bfd4D5fyr
+  /:
+    url: https://author-p133911-e1313554.adobeaemcloud.com/bin/franklin.delivery/Venky2423/venkyuenew/main
+    type: "markup"
+    suffix: ".html"
