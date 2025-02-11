@@ -40,7 +40,13 @@ function days(endDate, startDate) {
  * @param {scope} globals
  */
 function populateFileUploadData(globals) {
+  const files = globals.field.$value;
+  const data = [];
+  files.forEach((file) => {
+    data.push({ originalName: file?.name, newName: '' });
+  });
   const fileUploadPanelQName = '$form.panelcontainer1738821085880.panelcontainer_6212191381738821333228.imagepanel.panelcontainer1739253353968.uploadDataPanel';
+  globals.functions.importData(data, fileUploadPanelQName);
 }
 
 // eslint-disable-next-line import/prefer-default-export
