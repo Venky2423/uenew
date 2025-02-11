@@ -37,6 +37,12 @@
           "value": true
         },
         {
+          "component": "text",
+          "name": "dataRef",
+          "label": "Bind reference",
+          "valueType": "string"
+        },
+        {
             "component": "select",
             "name": "colspan",
             "label": "Columns",
