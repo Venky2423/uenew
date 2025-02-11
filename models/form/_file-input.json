@@ -39,6 +39,13 @@
                     "fields": [
                         {
                             "...": "./_common.json#/basicfields"
+                        },
+                        {
+                            "component": "boolean",
+                            "name": "allowMultiple",
+                            "label": "Allow multiple file attachments",
+                            "valueType": "boolean",
+                            "collapsible": false
                         }
                     ]
                 },
@@ -61,13 +68,6 @@
                     "fields": [
                         {
                             "...": "./_common.json#/validationfields"
-                        },
-                        {
-                            "component": "boolean",
-                            "name": "allowMultiple",
-                            "label": "Allow multiple file attachments",
-                            "valueType": "boolean",
-                            "collapsible": false
                         },
                         {
                             "component": "text",
