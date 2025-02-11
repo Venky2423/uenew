@@ -1764,6 +1764,13 @@
                 "value": "12"
               }
             ]
+          },
+          {
+            "component": "boolean",
+            "name": "allowMultiple",
+            "label": "Allow multiple file attachments",
+            "valueType": "boolean",
+            "collapsible": false
           }
         ]
       },
