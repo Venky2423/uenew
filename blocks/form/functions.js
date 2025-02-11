@@ -28,5 +28,14 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
+/**
+ * populates the uploaded file data into a repeatable panel instance
+ * @param {object} globals
+ * @returns {string}
+ */
+function populateFileUploadData(globals) {
+
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days };
+export { getFullName, days, populateFileUploadData };
