@@ -33,8 +33,14 @@ function days(endDate, startDate) {
  * @param {object} globals
  * @returns {string}
  */
-function populateFileUploadData(globals) {
 
+/**
+ * populates the uploaded file data into a repeatable panel instance
+ * @name populateFileUploadData
+ * @param {scope} globals
+ */
+function populateFileUploadData(globals) {
+  const fileUploadPanelQName = '$form.panelcontainer1738821085880.panelcontainer_6212191381738821333228.imagepanel.panelcontainer1739253353968.uploadDataPanel';
 }
 
 // eslint-disable-next-line import/prefer-default-export
