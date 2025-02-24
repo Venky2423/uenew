@@ -28,5 +28,26 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
+/**
+ * populates the uploaded file data into a repeatable panel instance
+ * @param {object} globals
+ * @returns {string}
+ */
+
+/**
+ * populates the uploaded file data into a repeatable panel instance
+ * @name populateFileUploadData
+ * @param {scope} globals
+ */
+function populateFileUploadData(globals) {
+  const files = globals.field.$value;
+  const data = [];
+  files.forEach((file) => {
+    data.push({ originalName: file?.name, newName: '' });
+  });
+  const fileUploadPanelQName = '$form.panelcontainer1738821085880.panelcontainer_6212191381738821333228.imagepanel.panelcontainer1739253353968.uploadDataPanel';
+  globals.functions.importData(data, fileUploadPanelQName);
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days };
+export { getFullName, days, populateFileUploadData };
