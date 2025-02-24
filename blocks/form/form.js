@@ -320,7 +320,7 @@ function inputDecorator(field, element) {
         input.checked = field.value === input.value;
       }
     } else {
-      input.multiple = field.type === 'file[]' || field.properties?.allowMultiple;
+      input.multiple = field.type === 'file[]';
     }
     if (field.required) {
       input.setAttribute('required', 'required');
@@ -342,15 +342,6 @@ function inputDecorator(field, element) {
     }
     if (input.type === 'email') {
       input.pattern = emailPattern;
-    }
-    if (input.multiple) {
-      field.type = 'file[]';
-      if (field.properties?.maxFilesMessage) {
-        input.dataset.maxFilesMessage = field.properties.maxFilesMessage;
-      }
-      if (field.properties?.minFilesMessage) {
-        input.dataset.minFilesMessage = field.properties.minFilesMessage;
-      }
     }
     setConstraintsMessage(element, field.constraintMessages);
     element.dataset.required = field.required;

@@ -183,7 +183,7 @@ main .form fieldset.radio-group-wrapper legend {
 }
 
 main .form form .wizard > legend{
-    /*float: left;*/
+    float: left;
     width: 100%;
 }
 

@@ -50,7 +50,7 @@ function handleActiveChild(id, form) {
     field.closest('.field-wrapper').dataset.active = true;
     field.focus();
     if (document.activeElement !== field) {
-      // field.scrollIntoView({ behavior: 'smooth' });
+      field.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
