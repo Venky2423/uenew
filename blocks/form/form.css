@@ -634,3 +634,7 @@ main .form form .checkbox-group-wrapper.horizontal .field-description {
     order: 1;
     margin-top: 0.5rem;
 }
+
+/*main .form form .field-uploaddatapanel > div > fieldset:first-child {*/
+/*    display: none;*/
+/*}*/

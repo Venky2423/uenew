@@ -40,13 +40,30 @@ function days(endDate, startDate) {
  * @param {scope} globals
  */
 function populateFileUploadData(globals) {
+  const fileNamesPanel = globals.form.panelcontainer1738821085880.panelcontainer_6212191381738821333228.imagepanel.panelcontainer1739253353968.uploadDataPanel;
   const files = globals.field.$value;
-  const data = [];
-  files.forEach((file) => {
-    data.push({ originalName: file?.name, newName: '' });
+  if (fileNamesPanel.$value.length > 1) {
+    fileNamesPanel.$value.forEach(() => {
+      globals.functions.dispatchEvent(fileNamesPanel, 'removeItem');
+    });
+  }
+  // show the metadata panel only if files are attached
+  if (files.length > 0) {
+    globals.functions.setProperty(fileNamesPanel.$parent, { visible: true });
+  } else {
+    globals.functions.setProperty(fileNamesPanel.$parent, { visible: false });
+  }
+  files.forEach((file, index) => {
+    if (index !== 0) {
+      globals.functions.dispatchEvent(fileNamesPanel, 'addItem');
+    }
   });
-  const fileUploadPanelQName = '$form.panelcontainer1738821085880.panelcontainer_6212191381738821333228.imagepanel.panelcontainer1739253353968.uploadDataPanel';
-  globals.functions.importData(data, fileUploadPanelQName);
+
+  files.forEach((file, index) => {
+    setTimeout(() => {
+      globals.functions.setProperty(fileNamesPanel[index].originalName, file?.name);
+    }, 500);
+  });
 }
 
 // eslint-disable-next-line import/prefer-default-export
