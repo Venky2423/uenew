@@ -62,7 +62,8 @@ function populateFileUploadData(globals) {
   files.forEach((file, index) => {
     setTimeout(() => {
       globals.functions.setProperty(fileNamesPanel[index].originalName, file?.name);
-    }, 500);
+    }, 100); // TODO: remove this set timeout
+    // tried with
   });
 }
 
